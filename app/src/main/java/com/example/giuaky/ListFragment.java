@@ -74,6 +74,13 @@ public class ListFragment extends Fragment {
         arrayBook.add(new Book("Máy tính","Máy tính Casio",R.drawable.caculator));
         arrayBook.add(new Book("Vở","Vở bài tập",R.drawable.notebook));
         arrayBook.add(new Book("Bút chì","Bút chì 2B",R.drawable.pencil));
+        arrayBook.add(new Book("Tẩy","Tẩy bút chì Steadler",R.drawable.tay));
+        arrayBook.add(new Book("Compa","Compa deli",R.drawable.compa));
+        arrayBook.add(new Book("Thước", "Thước kẻ nhựa",R.drawable.thuoc));
+        arrayBook.add(new Book("Kéo", "Kéo học sinh",R.drawable.keo));
+        arrayBook.add(new Book("Xấy giấy", "Xấy giấy A4 JKPlus",R.drawable.xapgiay));
+
+
         adapter = new Book_adapter( getActivity(),R.layout.book,arrayBook);
         lvBook.setAdapter(adapter);
         lvBook.setOnItemClickListener(new AdapterView.OnItemClickListener() {
